@@ -23,6 +23,9 @@ AHandController::AHandController()
 
 	SphereCollider = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollider"));
 	SphereCollider->SetupAttachment(MotionController);
+
+	Watch = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Watch"));
+	Watch->SetupAttachment(MotionController);
 }
 
 // Called when the game starts or when spawned
